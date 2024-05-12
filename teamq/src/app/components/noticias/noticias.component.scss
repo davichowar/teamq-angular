@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columnas */
+}
+
+.fila {
+  display: flex;
+}
+
+.rectangulo {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  aspect-ratio: 2/1; /* Para mantener la proporción del cuadrado */
+  background-color: #F5F5F5; /* Cambia el color como desees */
+  margin-right: 1%;
+  margin-bottom: 1%;
+  display: flex; /* Utiliza flexbox para alinear los textos */
+  flex-direction: column; /* Organiza los textos en columnas */
+  justify-content: flex-end; /* Alinea los textos al final del rectángulo */
+  padding: 2%; /* Espacio interno para el texto */
+}
+
+.bordeColorido:last-child {
+  border: 5px solid;
+  border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+}
+
+.titulo, .subtitulo {
+  margin: 0; /* Elimina el margen por defecto */
+  color: #323232; /* Color del texto */
+  font-size: 3vw;
+}
+
+.boton {
+  background-color: #FFFFFF; /* Cambia el color como desees */
+  color: #525252; /* Cambia el color del texto del botón */
+  padding: 1vh 2vw; /* Ajusta el tamaño del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 8px; /* Ajusta el borde del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Añade una transición suave */
+  align-self: flex-start;
+}
+
+.botonOculto {
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s;
+}
+
+.rectangulo:hover .botonOculto {
+  opacity: 1; /* Visible al pasar el cursor sobre el rectángulo */
+}
+
+.boton:hover {
+  background-color: #ff9933; /* Cambia el color al pasar el cursor sobre el botón */
+}

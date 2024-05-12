@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  teamq:
+    container_name: teamq
+    restart: always
+    build:
+      context: ./teamq
+      dockerfile: Dockerfile
+    volumes:
+      - './teamq:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '4209:4200'

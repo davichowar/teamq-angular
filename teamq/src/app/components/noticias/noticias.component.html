@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="fila">
+        <div class="rectangulo" *ngFor="let seccion of seccion1">
+            <h1 class="titulo">{{ seccion.titulo }}</h1>
+            <h2 class="subtitulo">{{ seccion.subtitulo }}</h2>
+            <button class="boton botonOculto">Descrubrir</button>
+        </div>
+    </div>
+    <div class="fila">
+        <div class="rectangulo bordeColorido" *ngFor="let seccion of seccion2">
+            <h1 class="titulo">{{ seccion.titulo }}</h1>
+            <h2 class="subtitulo">{{ seccion.subtitulo }}</h2>
+            <button class="boton">Descrubrir</button>
+        </div>
+    </div>
+</div>
+  
+  

@@ -1,0 +1,11 @@
+<div class="slider">
+    <div class="slide" [ngClass]="{'active': currentIndex === i}" *ngFor="let slide of categorias; let i = index">
+        <div class="circle">
+            <span>{{ slide.nombre }}</span>
+        </div>
+      <p>{{ slide.descripcion }}</p>
+    </div>
+    <button (click)="prevSlide()" class="prev" *ngIf="currentIndex !== 0">&lt;</button>
+    <button (click)="nextSlide()" class="next" *ngIf="currentIndex !== categorias.length - 1">&gt;</button>
+  </div>
+  

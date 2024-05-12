@@ -1,0 +1,22 @@
+.contenedor {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 100%; /* Evita que el contenedor sea más ancho que la ventana del navegador */
+}
+
+.rectangulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 calc(8.33% - 1%);
+  margin-right: 1%;
+  background-color: #F5F5F5;
+  max-width: 200px; /* Ancho máximo del rectángulo */
+  height: 4vw; /* Altura del rectángulo relativa al ancho de la ventana del navegador */
+}
+
+.texto {
+  font-size: 1vw; /* Tamaño del texto relativo al ancho de la ventana del navegador */
+  color: #CFCFCF; /* Color del texto */
+  text-align: center; /* Centra horizontalmente el texto */
+}
